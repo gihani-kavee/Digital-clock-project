@@ -9,6 +9,7 @@ body {
     min-height: 100vh;
     overflow: hidden;
     position: relative;
+    isolation:isolate;
     background: #87ceeb;
 }
 #cloud-background {
@@ -17,21 +18,20 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
+    pointer-events:none;
 }
+
+
 .clock-page {
     position: relative;
     z-index: 1;
-}
-
-.clock-page {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
+   
 }
 
 
